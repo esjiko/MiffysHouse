@@ -2,14 +2,39 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
   const [stage, setStage] = useState(0);
   const [numberOfCarrots, setNumberOfCarrots] = useState(0);
-  
+  const [miffySide, setMiffySide] = useState("Left");
+
+
+  const moveMiffy = () => {
+    if(miffySide == "Left") {
+      setMiffySide("Right")
+    } else {
+      setMiffySide("Left")
+    }
+  };
+  useEffect(() => {
+    // Set up the interval when the component is mounted
+    const intervalId = setInterval(moveMiffy, 5000); // 10,000 milliseconds = 10 seconds
+    // Clean up the interval when the component is unmounted
+    return () => {
+      clearInterval(intervalId);
+    };
+  })
+
+
+  useEffect(() => {
+    const oneLife = setTimeout(() => {
+      console.log("life")
+    }, 10000)
+  }, []);
 
   return (
     <>
@@ -19,9 +44,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={{margin: 0}}>
-      {/* <div img style={{ position: "absolute", color: "#fff", zIndex:10, width: "10", height: "30"}}> 
-        <img src="/MiffyZombie.png"/> 
-      </div> */}
+      {(stage != 0 && stage != 1) &&
+       <div style={{ position: "absolute", color: "#fff", zIndex:10, height: "30", transition: 'left 5s', left: miffySide == "Left" ? (0) : ("calc(100vw - 160px)")}}> 
+        <img style={{height: 160}} src="/MiffyZombie.png"/> 
+      </div>}
+
 
       <div style={{position: "absolute", fontSize: 48, margin:0, display: "flex", zIndex: 10, flexDirection: "row", bottom: 0, right: 34}}>
         {

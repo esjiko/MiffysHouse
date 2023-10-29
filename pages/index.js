@@ -19,15 +19,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={{margin: 0}}>
-      <div> style={{ position: "absolute", zindex:10 }}</div>
+      {/* <div img style={{ position: "absolute", color: "#fff", zIndex:10, width: "10", height: "30"}}> 
+        <img src="/MiffyZombie.png"/> 
+      </div> */}
 
       <div style={{position: "absolute", fontSize: 48, margin:0, display: "flex", zIndex: 10, flexDirection: "row", bottom: 0, right: 34}}>
         {
           Array.from({ length: numberOfCarrots }, (_, i) => i).map((carrot) => 
-          <p>
+          <p> 
             
 🥕 
-          </p>)
+        </p>)
         }
       </div>
         
@@ -157,6 +159,12 @@ setNumberOfCarrots(0)
 
              
             <div 
+onClick={() => {
+  alert("DO YOU LIVE UNDER A ROCK?? THIS IS COMMON KNOWLEDGE")
+setStage(1) 
+setNumberOfCarrots(0)
+}}
+
           style={{display: "flex", flexDirection: "row", position: "relative"}}>
             <img style={{maxHeight: "50vh"}} src="/Screenshot 2023-10-29 at 3.37.39 AM.png"/>
             <p style={{position: "absolute", bottom: -48, transform: "translate(-50%, -50%)", left: "50%"}}>Miftziens</p>
@@ -183,7 +191,7 @@ setNumberOfCarrots(0)
         
         {stage == 5 && 
         <div style={{ width: "100vw", overflow: "hidden", height: "100vh", backgroundColor: "#fefae7", overflow: "hidden", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
-          <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/doors.png"/>  
+          {/* <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/doors.png"/>   */}
           <p style={{marginBottom: 0, fontSize: 32, marginBottom: 92}}>What kind of pet does Miffy have?</p>  
 
 

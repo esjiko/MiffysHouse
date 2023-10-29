@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const [stage, setStage] = useState(7);
+  const [stage, setStage] = useState(0);
   const [numberOfCarrots, setNumberOfCarrots] = useState(0);
 
   return (

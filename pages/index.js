@@ -191,7 +191,6 @@ setNumberOfCarrots(0)
         
         {stage == 5 && 
         <div style={{ width: "100vw", overflow: "hidden", height: "100vh", backgroundColor: "#fefae7", overflow: "hidden", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
-          {/* <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/doors.png"/>   */}
           <p style={{marginBottom: 0, fontSize: 32, marginBottom: 92}}>What kind of pet does Miffy have?</p>  
 
 

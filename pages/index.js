@@ -45,7 +45,7 @@ export default function Home() {
       </Head>
       <main style={{margin: 0}}>
       {(stage != 0 && stage != 1) &&
-       <div style={{ position: "absolute", color: "#fff", zIndex:10, height: "30", transition: 'left 5s', left: miffySide == "Left" ? (0) : ("calc(100vw - 160px)")}}> 
+       <div style={{ visibility: stage == 7 ? "hidden" : "visible",position: "absolute", color: "#fff", zIndex:10, height: "30", transition: 'left 5s', left: miffySide == "Left" ? (0) : ("calc(100vw - 160px)")}}> 
         <img style={{height: 160}} src="/MiffyZombie.png"/> 
       </div>}
 
@@ -316,7 +316,7 @@ setNumberOfCarrots(0)
           <div style={{width: "100vw", objectFit: "cover", position: 'relative', height: "100vh"}}>
            <div 
             onClick={() => {
-              alert("We done")
+              window.location.href = "https://hauntedhouse.hackclub.com/rooms/cat-room";
             }
             }
            style={{position: "absolute", border: "0px solid red",  bottom: 32, right: 69, width: "600px", height: "400px"}}>

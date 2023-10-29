@@ -48,7 +48,7 @@ export default function Home() {
         {/* info screen */}
         {stage == 1 &&
         <div style={ { width: "100vw", height: "100vh"}} onClick={() => setStage(2)}>
-          <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/carrot.gif"/> 
+          <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/carrot.GIF"/> 
         </div>}
 
         {/* door 1 */}

@@ -19,8 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={{margin: 0}}>
-
-      
+      <div> style={{ position: "absolute", zindex:10 }}</div>
 
       <div style={{position: "absolute", fontSize: 48, margin:0, display: "flex", zIndex: 10, flexDirection: "row", bottom: 0, right: 34}}>
         {
@@ -139,29 +138,6 @@ setNumberOfCarrots(0)
     
         </div>}
 
-        {/* door 2 */}
-        {/* {stage == 3 && 
-        
-         <div style={{ width: "100vw", overflow: "hidden", height: "100vh", backgroundColor: "#fefae7", overflow: "hidden", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
-           <p style={{marginBottom: 0, fontSize: 32, marginBottom: 92}}>What color is Miffy's dress in most of the books?</p> 
-          <button onClick={() => {
-            alert("BRUH??? WHO LET YOU ON THIS TEAM??!!")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}
-          >Red</button>
-          <button onClick={() => {
-            setStage(4)
-            setNumberOfCarrots(2)
-            }}>
-            Blue</button>
-          <button onClick={() => {
-            alert("DID YOU EVEN READ THE QUESTION??!")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}>Yellow</button>
-        </div>} */}
-
       {/* door 3 */}
       {stage == 4 && 
         <div style={{ width: "100vw", overflow: "hidden", height: "100vh", backgroundColor: "#fefae7", overflow: "hidden", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
@@ -200,34 +176,14 @@ setNumberOfCarrots(0)
           
     
         </div>}
-       {/* {stage == 4 && 
-        <div style={{width: "100vw", height: "100vh"}}>
-          <p>What is Miffy's original Dutch name?</p>  
-          <button onClick={() => {
-            alert("SERIOUSLY???! EVEN I KNEW THAT")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}>Nijnje</button>
-          <button onClick={() => {
-            setStage(5)
-            setNumberOfCarrots(3)
-          }}
-            >
-            Konijntje</button>
-          <button onClick={() => {
-            alert("YIKES!! THAT WAS A TRAINWRECK OF AN ANSWER")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}>Miftziens</button>
-        </div>} */}
 
         {/* door 4 */}
 
 
-        {/* door 1 */}
+        
         {stage == 5 && 
         <div style={{ width: "100vw", overflow: "hidden", height: "100vh", backgroundColor: "#fefae7", overflow: "hidden", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
-          {/* <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/doors.png"/>  */}
+          <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/doors.png"/>  
           <p style={{marginBottom: 0, fontSize: 32, marginBottom: 92}}>What kind of pet does Miffy have?</p>  
 
 
@@ -310,79 +266,6 @@ setNumberOfCarrots(0)
           </div>
           </div>
         }
-          {/* {stage == 6 &&
-        <div style={{width: "100vw", height: "100vh"}}>
-          <p>When is Miffy's official birthday?</p>
-          <button
-          onClick={async () => 
-            {setStage(7)
-          await setNumberOfCarrots(5)
-          
-          setTimeout(() => {
-            alert("dang it... you got all the carrots \n goodbye")
-          }, 500)
-          }}
-          >March 21st
-          
-          </button>
-          <button onClick={() => {
-            alert("CONGRATULATIONS ON THE WORST ANSWER OF THE DAY.")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}>October 15th</button>
-          <button onClick={() => {
-            alert("WAS THAT YOUR FINAL ANSWER OR YOUR FINAL JOKE?")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}>June 21st</button>
-        </div>
-          }  */}
-
-
-        {/* {stage == 5 &&  */}
-        {/* <div style={{ width: "100vw", overflow: "hidden", height: "100vh", backgroundColor: "#fefae7", overflow: "hidden", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}> */}
-          {/* <img style={{width: "100vw", height: "100vh", objectFit: "cover"}} src="/doors.png"/>  */}
-          {/* <p style={{marginBottom: 0, fontSize: 32, marginBottom: 92}}>What kind of pet does Miffy have?</p>  
-
-
-          <div
-          style={{width: "100%", display: "flex", justifyContent: 'space-around'}}>
-            <div onClick={() => {
-            alert("WHAT THE HECK!! ARE YOU CRAZY?!")
- setStage(1) 
-setNumberOfCarrots(0)
-          }}
-          style={{display: "flex", flexDirection: "row", position: "relative"}}> 
-              <img style={{maxHeight: "50vh"}} src="/Screenshot 2023-10-29 at 3.37.02 AM.png"/>
-              <p style={{position: "absolute", bottom: -48, transform: "translate(-50%, -50%)", left: "50%"}}>A cat</p>
-            </div>
-
-             
-            <div onClick={() => {
-            alert("FAKE MIFFY FAN!!! START OVER!!!")
- setStage(1) }
-setNumberOfCarrots(0) */}
-          {/* style={{display: "flex", flexDirection: "row", position: "relative"}}
-            <img style={{maxHeight: "50vh"}} src="/Screenshot 2023-10-29 at 3.37.39 AM.png"/>
-            <p style={{position: "absolute", bottom: -48, transform: "translate(-50%, -50%)", left: "50%"}}>A bird</p>
-
-            </div> 
-            <div onClick={() => {
-            setStage(3)
-            setNumberOfCarrots(1) 
-          }}
-          style={{display: "flex", flexDirection: "row", position: "relative"}}>
-            <img style={{maxHeight: "50vh"}} src="/Screenshot 2023-10-29 at 3.37.28 AM.png"/>
-            <p style={{position: "absolute", bottom: -48, transform: "translate(-50%, -50%)", left: "50%"}}>A fish</p>
-
-            </div>
-          </div>
-          
-    
-        </div>} */} 
-{/* 
-door 3 */}
-
      {/* {stage == 5 &&
    
           } *//* ending screen 1 */}
@@ -409,7 +292,6 @@ door 3 */}
            <img style={{width: "100vw", objectFit: "cover", height: "100vh"}} src="/tvbg (1).png"/>
         </div>}
 
-          
-
+        
         </main>
     </>)}
